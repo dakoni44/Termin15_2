@@ -36,7 +36,7 @@ public class MyAdapter extends BaseAdapter {
     @Override
     public View getView(int position, View convertView, ViewGroup parent) {
         if(convertView==null){
-            convertView=activity.getLayoutInflater().inflate((R.layout.my_single_item,null);
+            convertView=activity.getLayoutInflater().inflate(R.layout.my_single_item,null);
         }
         TextView tvName=convertView.findViewById(R.id.tvName);
         tvName.setText(data.get(position).getName());
